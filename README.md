@@ -1,15 +1,15 @@
-# dsh-anysearch-refs
 
-<p align="center">
+
+# dsh-anysearch-refs
+<p align="left">
   <a href="https://github.com/deepseek-ai"><img src="https://img.shields.io/badge/DeepSeek_Harness-plugin-blue" alt="DSH Plugin"></a>
   <a href="https://github.com/deepseek-ai"><img src="https://img.shields.io/badge/DeepSeek_Harness-web-orange" alt="DSH Web"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
 </p>
 
-[English](#english) · [中文](#中文)
+[English](#what) · [中文](#这是什么)
 
----
-
-## English
+## What
 
 A DSH sidebar plugin that shows AnySearch references as cards, with the search query, source snippets and highlighted keywords in the right sidebar.
 
@@ -36,16 +36,10 @@ For normal users, these three commands are enough — no `pnpm` needed:
 ```bash
 dsh plugin --profile web add @anysearch/anysearch-dsh
 dsh plugin --profile web add dsh-better-sidebar
-dsh plugin --profile web add dsh-anysearch-refs
+dsh plugin --profile web add github:v587d/dsh-anysearch-refs
 ```
 
 Then restart `dsh web` and hard-refresh the browser (`Ctrl+Shift+R` / `Cmd+Shift+R`).
-
-For local development / unpublished builds:
-
-```bash
-dsh plugin --profile web add "link:/absolute/path/to/dsh-anysearch-refs"
-```
 
 ### Build from source
 
@@ -69,7 +63,7 @@ MIT
 
 ---
 
-## 中文
+## 这是什么
 
 一个 DSH 侧边栏插件，把 AnySearch 的搜索结果以卡片形式展示在右侧侧边栏中，包括搜索词、来源摘要和关键词高亮。
 
@@ -96,16 +90,10 @@ MIT
 ```bash
 dsh plugin --profile web add @anysearch/anysearch-dsh
 dsh plugin --profile web add dsh-better-sidebar
-dsh plugin --profile web add dsh-anysearch-refs
+dsh plugin --profile web add github:v587d/dsh-anysearch-refs
 ```
 
 然后重启 `dsh web`，并在浏览器中硬刷新（`Ctrl+Shift+R` / `Cmd+Shift+R`）。
-
-本地开发 / 未发布版本：
-
-```bash
-dsh plugin --profile web add "link:/绝对路径/dsh-anysearch-refs"
-```
 
 ### 源码构建
 
