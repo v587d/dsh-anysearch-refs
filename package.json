@@ -37,7 +37,8 @@
     "build:client": "tsdown",
     "check": "vitest run && tsc -p tsconfig.build.json --noEmit",
     "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.build.json --noEmit"
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "prepare": "pnpm run build"
   },
   "engines": {
     "node": ">=20"
