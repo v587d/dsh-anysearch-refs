@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2024"],
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "noEmit": false,
+    "noImplicitAny": false,
+    "types": []
+  },
+  "include": ["src/shared/**/*.ts", "src/host/**/*.ts"],
+  "exclude": ["lib", "tests", "src/client/**"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "dsh-anysearch-refs/dsh-anysearch-refs",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "description": "在 DSH 侧边栏中展示 AnySearch 搜索引用卡片",
+  "engines": {
+    "dsh": ">=0.0.1"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": []
+  },
+  "client": {
+    "main": "./lib/client-registry.js"
+  }
+}

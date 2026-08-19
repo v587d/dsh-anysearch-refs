@@ -1,0 +1,311 @@
+/** CSS Modules for the AnySearch Refs tab.
+ *  Compiled by the build pipeline into hashed class names +
+ *  a <style data-plugin="dsh-anysearch-refs"> tag.
+ *
+ *  All colors ride DSH's semantic tokens (--dsw-alias-*) so light/dark
+ *  skins are followed automatically. No fixed pixel heights: the container
+ *  fills the sidebar panel and the list scrolls within the available
+ *  viewport height.
+ */
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  font: var(--dsw-font-xs-13, 13px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+  background: var(--dsw-alias-bg-layer-1, #f8f8f8);
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font: var(--dsw-font-xs-strong-13, 600 14px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+}
+
+.headerCount {
+  font: var(--dsw-font-xxxs-11, 12px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-secondary, #666);
+}
+
+/* ── Scrollable body: fills the remaining sidebar height ───────────── */
+
+.scrollArea {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Empty state ─────────────────────────────────────────────────── */
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 0;
+  padding: 32px 16px;
+  text-align: center;
+  gap: 8px;
+}
+
+.emptyIcon {
+  font-size: 36px;
+  opacity: 0.5;
+}
+
+.emptyTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+}
+
+.emptyHint {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--dsw-alias-label-tertiary, #888);
+  max-width: 240px;
+}
+
+/* ── Batch card ──────────────────────────────────────────────────── */
+
+.batchCard {
+  flex: none;
+  border: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--dsw-alias-bg-layer-2, #ffffff);
+}
+
+.batchHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--dsw-alias-bg-layer-1, #fafafa);
+  border-bottom: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+}
+
+.batchHeaderLeft {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.batchQuery {
+  font: var(--dsw-font-xs-strong-13, 600 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.batchMeta {
+  font: var(--dsw-font-xxxs-11, 11px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-secondary, #666);
+}
+
+.batchTime {
+  flex: none;
+  font: var(--dsw-font-xxxs-11, 11px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-tertiary, #888);
+}
+
+.sourcesList {
+  padding: 4px 0;
+}
+
+/* ── Source card ─────────────────────────────────────────────────── */
+
+.sourceCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+  transition: background 0.15s ease;
+}
+
+.sourceCard:last-child {
+  border-bottom: none;
+}
+
+.sourceCard:hover {
+  background: var(--dsw-alias-interactive-bg-hover, #f0f4ff);
+}
+
+.previewButton {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+  border-radius: 8px;
+  background: var(--dsw-alias-bg-layer-1, #f8f8f8);
+  color: var(--dsw-alias-label-secondary, #666);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.previewButton:hover {
+  background: var(--dsw-alias-interactive-bg-hover, #eef2ff);
+  color: var(--dsw-alias-brand-primary, #2563eb);
+  border-color: var(--dsw-alias-border-l2, #c0c0c0);
+}
+
+.sourceBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.sourceTitle {
+  display: block;
+  font: var(--dsw-font-xs-strong-13, 600 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+  text-decoration: none;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.sourceTitle:hover {
+  color: var(--dsw-alias-brand-primary, #2563eb);
+  text-decoration: underline;
+}
+
+.sourceUrlLine {
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sourceUrl {
+  font: var(--dsw-font-xxxs-11, 11px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-secondary, #666);
+  text-decoration: none;
+}
+
+.sourceUrl:hover {
+  color: var(--dsw-alias-brand-primary, #2563eb);
+  text-decoration: underline;
+}
+
+.sourceSnippet {
+  margin-top: 5px;
+  font: var(--dsw-font-xxs-12, 12px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-secondary, #444);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.highlight {
+  background: #ffeb3b;
+  color: #1e1e2e;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 600;
+}
+
+.sourceOpen {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  color: var(--dsw-alias-label-tertiary, #888);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sourceOpen:hover {
+  background: var(--dsw-alias-interactive-bg-hover, #eef2ff);
+  color: var(--dsw-alias-brand-primary, #2563eb);
+}
+
+/* ── Inline preview overlay ───────────────────────────────────────── */
+
+.previewOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: var(--dsw-alias-bg-layer-1, #ffffff);
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--dsw-alias-border-l1, #e0e0e0);
+  background: var(--dsw-alias-bg-layer-2, #f8f8f8);
+  flex-shrink: 0;
+}
+
+.previewTitle {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: var(--dsw-font-xs-strong-13, 600 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+}
+
+.previewClose {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--dsw-alias-label-secondary, #666);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.previewClose:hover {
+  background: var(--dsw-alias-interactive-bg-hover, #eef2ff);
+  color: var(--dsw-alias-label-primary, #1e1e2e);
+}
+
+.previewFrame {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border: none;
+  background: var(--dsw-alias-bg-base, #ffffff);
+}
