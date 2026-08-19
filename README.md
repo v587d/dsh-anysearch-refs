@@ -26,8 +26,8 @@ Install these separately in your DSH profile first:
 
 | Package | Purpose |
 | --- | --- |
-| [`@anysearch/anysearch-dsh`](https://github.com/your-org/anysearch-dsh) | AnySearch data source / tool events |
-| [`dsh-better-sidebar`](https://github.com/your-org/DSH-better-sidebar) | Right sidebar / tab hosting |
+| [`@anysearch/anysearch-dsh`](https://github.com/anysearch-team/anysearch-dsh) | AnySearch data source / tool events |
+| [`dsh-better-sidebar`](https://github.com/omdsh-dev/DSH-better-sidebar) | Right sidebar / tab hosting |
 
 ### Installation
 
@@ -86,8 +86,8 @@ MIT
 
 | 包 | 作用 |
 | --- | --- |
-| [`@anysearch/anysearch-dsh`](https://github.com/your-org/anysearch-dsh) | AnySearch 数据源 / 工具事件 |
-| [`dsh-better-sidebar`](https://github.com/your-org/DSH-better-sidebar) | 右侧侧边栏 / tab 容器 |
+| [`@anysearch/anysearch-dsh`](https://github.com/anysearch-team/anysearch-dsh) | AnySearch 数据源 / 工具事件 |
+| [`dsh-better-sidebar`](https://github.com/omdsh-dev/DSH-better-sidebar) | 右侧侧边栏 / tab 容器 |
 
 ### 安装
 
